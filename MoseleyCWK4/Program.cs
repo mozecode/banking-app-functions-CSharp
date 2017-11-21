@@ -7,9 +7,7 @@ using System.Threading.Tasks;
 namespace MoseleyCWK4
 {
     class Program
-    {    
-      
-           
+    {
             static void Main(string[] args)
         {
             double accountBalance= 1000.50;
@@ -19,7 +17,7 @@ namespace MoseleyCWK4
             Console.Write("Would you like to make a (D)eposit, (W)ithdrawal, or (Q)uit?  ");
             string userInput=Console.ReadLine();
             int counter = 0;
-                       
+
            while (userInput!="Q")
             {
                  if (userInput=="D")
@@ -36,7 +34,7 @@ namespace MoseleyCWK4
                     { Console.Write("Please enter D, W, or Q. \n ");
                     Console.WriteLine();//intentionally blank
                      }
-             
+
                 Console.Write("Would you like to make a (D)eposit, (W)ithdrawal, or (Q)uit?  ");
                 userInput = Console.ReadLine();
             }
@@ -76,11 +74,11 @@ namespace MoseleyCWK4
             {
                 Console.WriteLine("You have a negative balance.  A fee of $25 has been assessed.");
                 temp=temp - 25;
-              
+
             }
             Console.WriteLine("Your account balance is {0:C}", temp);
 
-          
+
            Console.WriteLine();//intentionally blank
             return temp;
         }
